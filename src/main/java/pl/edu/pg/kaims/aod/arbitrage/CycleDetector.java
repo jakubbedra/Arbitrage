@@ -29,7 +29,7 @@ public class CycleDetector {
 
         for (int i = 0; i < n; i++) {
             if (g[current][i] != 0) {
-                if (i == start) {
+                if (i == path.get(0)) {
                     path.add(i);
                     cycles.add(new ArrayList<>(path));
                     path.remove((Integer)i);
